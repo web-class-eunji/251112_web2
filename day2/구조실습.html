@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            background: skyblue;
+            padding: 16px 32px;
+            align-items: center;
+        }
+
+        .header_menu {
+            display: flex;
+            list-style: none;
+        }
+
+        .header_menu > li {
+            margin: 16px;
+        }
+
+        .header_menu > li > a {
+            text-decoration: none;
+            color: rgb(40, 77, 120);
+            padding: 16px;
+            background-color: aliceblue;
+            border-radius: 8px;
+        }
+
+        .news_article {
+            border: 2px solid skyblue;
+            margin: 16px;
+        }
+
+        main {
+            display: flex;
+        }
+
+        .content_section {
+            flex-shrink: 0;
+        }
+
+        footer {
+            height: 200px;
+            background: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>logo</h1>
+        <nav>
+            <ul class="header_menu">
+                <li>
+                    <a href="#">
+                        menu
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        menu
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        menu
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content_section">
+            <article class="news_article">
+                <h2>제목이 들어갈 공간입니다.</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit quod vero, possimus corporis in exercitationem cum architecto quas voluptate distinctio dicta tempora ab quam tempore ipsa nam debitis assumenda neque?
+                </p>
+            </article>
+            <article class="news_article">
+                <h2>제목이 들어갈 공간입니다.</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit quod vero, possimus corporis in exercitationem cum architecto quas voluptate distinctio dicta tempora ab quam tempore ipsa nam debitis assumenda neque?
+                </p>
+            </article>
+            <article class="news_article">
+                <h2>제목이 들어갈 공간입니다.</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit quod vero, possimus corporis in exercitationem cum architecto quas voluptate distinctio dicta tempora ab quam tempore ipsa nam debitis assumenda neque?
+                </p>
+            </article>
+            <article class="news_article">
+                <h2>제목이 들어갈 공간입니다.</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit quod vero, possimus corporis in exercitationem cum architecto quas voluptate distinctio dicta tempora ab quam tempore ipsa nam debitis assumenda neque?
+                </p>
+            </article>
+            <article class="news_article">
+                <h2>제목이 들어갈 공간입니다.</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit quod vero, possimus corporis in exercitationem cum architecto quas voluptate distinctio dicta tempora ab quam tempore ipsa nam debitis assumenda neque?
+                </p>
+            </article>
+            <article class="news_article">
+                <h2>제목이 들어갈 공간입니다.</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit quod vero, possimus corporis in exercitationem cum architecto quas voluptate distinctio dicta tempora ab quam tempore ipsa nam debitis assumenda neque?
+                </p>
+            </article>
+        </section>
+
+        <aside class="aside">
+            <h3>Right aside</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit tempora esse exercitationem officia harum ipsa quas numquam voluptatem reprehenderit odio hic ea magni at doloribus, beatae sed qui id laboriosam?
+            </p>
+
+            <div class="user_form">
+                <input type="text" placeholder="이름 입력">
+                <button type="submit">제출</button>
+            </div>
+            <div class="ppl">
+                <h3>광고</h3>
+                <p>광고내용</p>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        푸터입니다.
+    </footer>
+</body>
+</html>
