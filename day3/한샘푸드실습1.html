@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한샘푸드실습1</title>
+    <script src="https://kit.fontawesome.com/c20f4000ab.js" crossorigin="anonymous"></script>
+    <style>
+        @font-face {
+            font-family: 'NanumSquareNeoLight';
+            src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.woff2);
+            font-weight: 300;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'NanumSquareNeoBold';
+            src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.woff2);
+            font-weight: 700;
+            font-display: swap;
+        }
+
+        article {
+            background: #e6e9bf;
+            width: 500px;
+            border-radius: 24px;
+        }
+
+        .text_box {
+            padding: 16px 32px;
+        }
+
+        .flex_box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        h2 {
+            font-family: 'NanumSquareNeoLight';
+            font-size: 16px;
+        }
+
+        p {
+            font-family: 'NanumSquareNeoBold';
+            font-size: 24px;
+            line-height: 38px;
+        }
+
+        .icon {
+            transform: rotate(-45deg);
+        }
+
+        .flex_box > a {
+            padding: 16px;
+            background: #fff;
+            border-radius: 50%;
+            color: #000;
+        }
+
+        .bg_img {
+            background: url(./service_img_04.png);
+            width: 100%;
+            height: 200px;
+            margin: 0;
+            border-radius: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <article>
+            <div class="text_box">
+                <div class="flex_box">
+                    <h2>위탁급식시스템</h2>
+                    <a href="#">
+                        <!-- 아이콘 넣을거임 -->
+                        <i class="fa-solid fa-arrow-right icon fa-xl"></i>
+                    </a>
+                </div>
+                <p>
+                    급식업무 일체를 위임받아
+                    <br>
+                    체계적으로 운영하는 전문 급식 서비스
+                </p>
+            </div>
+            <figure class="bg_img"></figure>
+        </article>
+    </section>
+</body>
+
+</html>
