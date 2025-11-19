@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css슬라이더</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        /* 버튼꾸며주기 */
+
+        ul {
+            width: 1200px;
+            display: flex;
+            overflow: hidden;
+            /* border: 1px solid #000; */
+            list-style: none;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+
+        li {
+            min-width: 268px;
+            /* border: 1px solid #000; */
+            margin: 0 16px;
+            height: 150px;
+        }
+
+        button:focus + ul li {
+            animation: css_slide 3s forwards;
+            animation-timing-function: cubic-bezier(0.95,-0.58, 0.18, 1.53);
+        }
+
+        li:nth-child(1){
+            background: url(./동물1.jpg);
+            background-size: cover;
+        }
+        li:nth-child(2){
+            background: url(./동물2.jpg);
+            background-size: cover;
+        }
+        li:nth-child(3){
+            background: url(./동물3.jpg);
+            background-size: cover;
+        }
+        li:nth-child(4){
+            background: url(./동물4.jpg);
+            background-size: cover;
+        }
+        li:nth-child(5){
+            background: url(./동물1.jpg);
+            background-size: cover;
+        }
+        li:nth-child(6){
+            background: url(./동물6.jpg);
+            background-size: cover;
+        }
+        li:nth-child(7){
+            background: url(./동물1.jpg);
+            background-size: cover;
+        }
+        li:nth-child(8){
+            background: url(./동물8.jpg);
+            background-size: cover;
+        }
+
+        @keyframes css_slide {
+            5% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-1200px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <button>
+            다른 동물 보기 버튼
+        </button>
+
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+</body>
+</html>

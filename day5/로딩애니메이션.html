@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로딩애니메이션</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            margin: 100px 0;
+            padding: 150px;
+        }
+
+        .ball {
+            width: 100px;
+            height: 100px;
+            background: skyblue;
+            border-radius: 50%;
+            margin: 50px;
+            animation-name: ball;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            box-shadow: 0 150px 80px #999;
+        }
+
+        .ball:nth-child(2){
+            animation-delay: 0.4s;
+        }
+
+        .ball:nth-child(3){
+            animation-delay: 0.8s;
+        }
+
+        @keyframes ball {
+            50% {
+                transform: translateY(-150px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
