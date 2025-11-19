@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버튼호버이펙트</title>
+    <style>
+        .animation_btn {
+            background: palevioletred;
+            color: #fff;
+            font-size: 24px;
+            border: none;
+            border-radius: 8px;
+            padding: 10px;
+            display: block;
+            margin: 100px auto;
+        }
+
+        .animation_btn:hover {
+            animation: shake 2s infinite;
+        }
+
+
+        @keyframes shake {
+            25% {
+                transform: rotate(10deg);
+            }
+
+            50% {
+                transform: rotate(-10deg);
+            }
+
+            75% {
+                transform: rotate(10deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button class="animation_btn">호버시 흔들리는 버튼</button>
+    </div>
+</body>
+</html>
