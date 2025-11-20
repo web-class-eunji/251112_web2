@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어쿼리실습</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .box:nth-child(1) {
+            background: tomato;
+            width: 100%;
+        }
+
+        .box:nth-child(2) {
+            background: greenyellow;
+            display: none;
+        }
+
+        .box:nth-child(3) {
+            display: none;
+            background: slateblue;
+        }
+
+        .box:nth-child(4) {
+            display: none;
+            background: sandybrown;
+        }
+
+        @media (max-width:1280px) {
+            .box:nth-child(1) {
+                display: none;
+            }
+            .box:nth-child(2) {
+                display: block;
+            }
+        }
+
+        @media (max-width:760px){
+            .box:nth-child(2) {
+                display: none;
+            }
+            .box:nth-child(3) {
+                display: block;
+            }
+        }
+
+        /* @media (min-width:760px) and (max-width:1280px) {
+            .box:nth-child(2) {
+                display: block;
+            }
+        }
+
+        @media (min-width:360px) and (max-width:760px) {
+            .box:nth-child(3) {
+                display: block;
+            }
+        } */
+
+        @media (max-width:360px) {
+            .box:nth-child(3) {
+                display: none;
+            }
+            .box:nth-child(4) {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="box">
+            저는 브라우저 크기의 100%를 차지하고 브라우저가 1280까지 줄어들면 사라져요
+        </div>
+        <div class="box">
+            저는 브라우저의 크기가 760보다 크고 1280보다 작을때만 나타나요
+        </div>
+        <div class="box">
+            저는 브라우저의 크기가 760 이하일 때 나타나고 브라우저가 360보다 작아지면 다시 사라져요
+        </div>
+        <div class="box">
+            저는 브라우저의 크기가 360이하일 때 나타나요
+        </div>
+    </section>
+</body>
+
+</html>

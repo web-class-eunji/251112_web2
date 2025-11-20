@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어쿼리</title>
+    <style>
+        .pc_box {
+            display: flex;
+        }
+
+        .pc_media {
+            width: 300px;
+            height: 300px;
+            background: greenyellow;
+            margin: 24px;
+        }
+
+        .pc_media:nth-child(2){
+            /* display: none; */
+            background: blueviolet;
+        }
+
+        .mo_media {
+            width: 100%;
+            height: 500px;
+            background: rgb(255, 132, 187);
+            margin: 24px;
+        }
+
+        @media (min-width: 360px){
+            /* min:늘어날때 */
+            .mo_media {
+                width: 50px;
+                height: 100px;
+            }
+        }
+
+        @media (min-width:760px){
+            .mo_media {
+                width: 500px;
+                height: 300px;
+            }
+        }
+
+        @media (max-width:1024px){
+            /* max : 줄어들때 */
+            .pc_box {
+                flex-wrap: wrap;
+            }
+
+            .pc_media {
+                width: 100%;
+            }
+        }
+
+        .mo_pc_media {
+            width: 100px;
+            height: 100px;
+            background: salmon;
+        }
+
+        @media (min-width:760px) and (max-width:1024px){
+            .mo_pc_media {
+                background: skyblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="pc_box">
+        <div class="pc_media"></div>
+        <div class="pc_media"></div>
+        <div class="pc_media"></div>
+    </div>
+    <div class="mo_media"></div>
+    <div class="mo_pc_media"></div>
+</body>
+</html>
