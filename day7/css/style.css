@@ -1,0 +1,119 @@
+body {
+    background: url(../bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* pc헤더 시작 */
+ul {
+    display: flex;
+}
+
+.pc_header_top > ul {
+    justify-content: flex-end;
+    font-size: 14px;
+    border-bottom: 1px solid #000;
+    padding: 8px 0;
+}
+
+.pc_header_top > ul > li {
+    margin-right: 32px;
+}
+
+.pc_header_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    border-bottom: 1px solid #000;
+}
+
+.pc_header_bottom > h1,
+.mo_header > h2 {
+    background: url(../logo_black-e98fc715585a7f605fb6de8694ddf54d.svg);
+    width: 146px;
+    height: 26px;
+    background-size: cover;
+}
+
+.pc_header_bottom > nav > ul > li > a {
+    color: #000;
+    text-decoration: none;
+    padding: 0 16px;
+}
+
+.header_right_box {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.search_box {
+    border: 1px solid #000;
+    padding: 8px 16px;
+    border-radius: 50px;
+}
+
+.search_box > input {
+    border: none;
+    background: none;
+    outline: none;
+}
+/* pc헤더 끝 */
+
+/* mo헤더 시작 */
+.mo_header {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    margin-top: 8px;
+}
+
+.icon_box {
+    display: flex;
+    gap: 16px;
+}
+
+/* mo헤더 끝 */
+
+/* 반응형시작 */
+@media (max-width:1280px) {
+    .pc_header_bottom > h1 {
+        background: url(../logo_black-e98fc715585a7f605fb6de8694ddf54d.svg);
+        width: 100px;
+        height: 18px;
+        background-size: cover;
+    }
+
+    .pc_header_bottom > nav > ul > li > a {
+        font-size: 12px;
+    }
+
+    .header_right_box {
+        gap: 16px;
+    }
+}
+
+@media (max-width:960px){
+    .mo_header {
+        display: flex;
+    }
+
+    .pc_header {
+        display: none;
+    }
+
+    body {
+        background: url(../bg.jpg);
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 15%;
+    }
+}
+
+/* 반응형 끝 */
