@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수</title>
+</head>
+<body>
+    <script>
+        // let 변수명;
+        // let 변수명 = 대입할값;
+
+        // 1. 변수명은 한글을 사용할 수 없다.
+        // 2. 영문과 숫자 그리고 일부 특수문자만 포함 가능하다. (_, $)
+        // 3. 변수명은 의미에 맞게 이름을 지어주어야 함
+        // 4. 변수명을 지어줄 때 여러가지의 단어를 합쳐서 만들어야 한다면 두번째 단어의 첫 스펠링을 대문자로 설정
+        //      menu_slider -> menuSlider
+        // 5. 변수명의 첫번째 문자는 영어 or _로 시작해야한다.
+        // 6. 예약어를 사용할 수 없다. ex) let
+
+
+        //변수의 특징
+        // 1. 하나의 변수 당 한개의 값만 담을 수 있다.
+        // 2. 변수에 저장할 수 있는 자료형 : String(문자형) / Number(숫자형) / Boolean(논리형) / Undefined(빈 값) / null
+
+        let mathNumber;
+        mathNumber = 100;
+
+        console.log(mathNumber);
+        mathNumber = 50;
+        console.log(mathNumber);
+
+        let text = "Javascript";
+        let num = '100'
+        let tag = "<h1>" + text + " 점수는 " + num + " 점 입니다. </h1>";
+        document.write(tag);
+
+        let naverReview = 55;
+        let googleReview = Number("85");
+        console.log(naverReview);
+        console.log(googleReview);
+
+        let a = true;
+        console.log(a);
+
+        let b = 10 >= 100;
+        console.log(b);
+
+        let c = Boolean("hello");
+        console.log(c);
+
+        //불리언이 false를 반환하는 조건 : 숫자 0 / null / undefined 에 대해
+
+
+        let cat;
+        let dog = 1;
+        // dog = null;
+        console.log(cat);
+        console.log(dog);
+
+        let num1 = 1;
+        let star = "별";
+        document.write(typeof num1,"<br>");
+        document.write(typeof star);
+    </script>
+</body>
+</html>

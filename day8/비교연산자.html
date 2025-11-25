@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비교연산자</title>
+</head>
+<body>
+    <script>
+        // a > b 
+        // a >= b
+        // a < b
+        // a <= b
+        // a == b : "10" 10 같다고 인식됨
+        // a === b : "10" 10 다르다고 인식됨 ( 타입까지검사 )
+        // a != b : 자료형이든 문자형이든 신경쓰지 않고 숫자 10과 문자 10이 같은것으로 인식되어 a!=b 에 대해 false를 반환
+        // a !== b : "10" 10  -> true
+
+        let a = 10;
+        let b = "10"; 
+        let result;
+        
+        result = a !== b;
+        console.log(result);
+    </script>
+</body>
+</html>
