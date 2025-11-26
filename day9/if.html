@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if</title>
+</head>
+
+<body>
+    <script>
+        // if(조건식){
+        //     조건식을 만족한다면 실행할 코드;
+        // }
+
+        let num = 10;
+        if (num > 500) {
+            document.write("조건이 참입니다.");
+        } else {
+            document.write("조건이 거짓입니다.");
+        }
+
+        if (false) {
+            document.write("참입니다.");
+        }
+
+        // 사용자가 좋아하는 숫자를 입력받아 그 숫자가 짝수라면 짝수를 좋아하시는군요! 홀수라면 홀수를 좋아하시는군요! 
+
+        let likeNum = prompt("당신이 좋아하는 숫자를 입력해주세요");
+        if(likeNum % 2 == 0){
+            document.write("당신이 좋아하는 숫자는 짝수입니다.");
+        }else {
+            document.write("당신이 좋아하는 숫자는 홀수입니다.");
+        }
+
+        // 자동형변환 : %,+,*,/ >= < 이런것들은 숫자로만 가능하다.
+
+
+        console.log(confirm("강아지를 좋아하세요?"));
+
+        //사용자에게 탈퇴할거냐고 물어본 후 확인을 눌렀다면 탈퇴처리되었습니다. 출력
+        // 취소를 눌렀다면 탈퇴 취소 되었습니다. 출력
+
+        let userConfirm = confirm("탈퇴하시겠습니까?");
+        if(userConfirm){
+            document.write("탈퇴처리되었습니다");
+        }else{
+            document.write("탈퇴 취소 되었습니다");
+        }
+        
+
+    </script>
+</body>
+
+</html>

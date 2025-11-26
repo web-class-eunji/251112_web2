@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지출계산</title>
+</head>
+<body>
+    <script>
+        let price1 = prompt("오늘의 교통비는?");
+        let price2 = prompt("오늘의 식비는?");
+        let price3 = prompt("오늘의 음료비는?");
+
+        let total = Number(price1) + Number(price2) + Number(price3);
+        let result = total >= 10000 ? total - 10000 + "원 초과입니다." : "돈 관리 잘했어요~";
+
+        document.write(result);
+    </script>
+</body>
+</html>

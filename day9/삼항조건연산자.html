@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼항조건연산자</title>
+</head>
+
+<body>
+    <script>
+        let a = 1;
+        let b = 2;
+        let result = a > b ? "강아지" : "고양이";
+        // 조건식? 맞으면 출력됨 : 틀리면 출려됨;
+
+        console.log(result);
+
+        //적정체중계산법 : 적정체중 = (신장 - 100) * 0.9;
+        // 키
+        // 몸무게
+        // 체중 구하는 공식
+        // 공식을 콘솔에 출력
+
+        // let height = 155;
+        // let weight = 80;
+        // let normalWeight = (height-100)*0.9;
+        // console.log(normalWeight);
+
+        let userName = prompt("당신의 이름을 입력해주세요");
+        let userHeight = prompt("당신의 키를 입력해주세요");
+        let userWeight = prompt("당신의 몸무게를 입력해주세요");
+        console.log(userName);
+        console.log(userHeight);
+        console.log(userWeight);
+
+        let normalWeight = (userHeight - 100) * 0.9;
+        let userResult = userWeight > normalWeight ? "당신은 비만! 운동을 하세요" : "당신은 저체중 밥을 많이 드세용";
+
+        document.write(userName, "님 ", userResult);
+        // console.log(normalWeight);
+
+
+
+    </script>
+</body>
+
+</html>

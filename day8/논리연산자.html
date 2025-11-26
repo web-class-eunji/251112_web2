@@ -10,6 +10,21 @@
         // ||(or) : 둘 중 하나만 true라면 true를 반환함
         // &&(and) : 피연산자중 값이 하나라도 false이면 false / 둘 다 true여야함
         // !(not) : 값이 true이면 청개구리처럼 false를 반환함
+
+        let a = 10;
+        let b = 20;
+        let c = 30;
+        let d = 40;
+        let result;
+
+        result = a > b || b >= c || c <= d;
+        console.log(result);
+
+        result = a <= b && b >= c && c <= d;
+        console.log(result);
+
+        result = !(a > b);
+        console.log(result);
     </script>
 </body>
 </html>
