@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중첩if문</title>
+</head>
+
+<body>
+    <script>
+        // if(조건식1){
+        //     if(조건식2){
+
+        //     }
+        // }
+
+
+        let a = 10;
+        let b = 20;
+        let c = 30;
+        if (a > b) {
+            document.write("1차 관문 조건이 참");
+            if (b > c) {
+                document.write("2차 관문 조건이 참");
+            } else if (b == 30) {
+                document.write("b는 20");
+            } else {
+                document.write("b는 30과 같지 않다.");
+            }
+        } else if (b == 20) {
+            document.write("b는 20");
+            if (b < c) {
+                document.write("b는 c보다 작습니다.")
+            }
+        }
+
+        //유저 아이디와 비밀번호를 미리 지정해둔 후 
+        // 사용자에게 id / password를 입력받는다.
+        // 설정해놓은 아이디와 비밀번호가 모두 일치할 경우 -> id님 반갑습니다!
+        // 비밀번호가 일치하지 않을 경우 -> 비밀번호가 일치하지 않습니다!
+        // 아이디가 일치하지 않을경우 -> 아이디가 일치하지 않습니다! 회원가입 하러가기 출력
+    </script>
+</body>
+
+</html>
