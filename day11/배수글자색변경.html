@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배수 글자색 변경</title>
+    <style>
+        .red {
+            color: red;
+        }
+
+        .green {
+            color: green;
+        }
+
+        .aqua {
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // for문을 사용해서 1부터 100까지 만들건데 5의 배수일 경우에는 빨간색 글자
+        // 7의 배수일 경우에는 초록색글자 / 그리고 5의 배수이며 7의 배수일 경우에는 아쿠아색
+        // 출력할 땐 태그 자체를 출력
+
+        for(let i = 1; i <= 100; i++){
+            if(i % 5 == 0 && i % 7 != 0){
+                document.write("<p class='red'>" + i + "</p>");
+            } else if (i % 7 == 0 && i % 5 != 0){
+                document.write("<p class='green'>" + i + "</p>");
+            } else if (i % 7 == 0 && i % 5 == 0){
+                document.write("<p class='aqua'>" + i + "</p>");
+            } else {
+                document.write(i + "<br>");
+            }
+        }
+    </script>
+</body>
+</html>

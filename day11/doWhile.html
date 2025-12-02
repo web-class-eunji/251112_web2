@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doWhile</title>
+    <style>
+        .even {
+            color: blue;
+        }
+
+        .odd {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // do{
+        //     자바스크립트코드;
+        //     증감식;
+        // }while(조건식);
+
+        let i = 1;
+        do{
+            document.write("dowhile문" + i + "실습중 <br>");
+            i++;
+        }while(i >= 5);
+
+        //20부터 10까지 하나씩 줄어들며 출력되는데 짝수는 파란색 홀수는 빨간색으로 출력해주세요
+        // class와 while 조건문활용
+
+        let j = 20;
+        while(j >= 10){
+            if(j % 2 == 0){
+                document.write("<p class='even'>" + j + "</p>");
+            }else {
+                document.write("<p class='odd'>" + j + "</p>");
+            }
+            j--;
+        }
+    </script>
+</body>
+</html>
