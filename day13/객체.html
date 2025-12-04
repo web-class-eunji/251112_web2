@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체</title>
+</head>
+<body>
+    <script>
+        // 객체 : 속성, 메소드로 구성되어있다.
+        // 객체.메서드();
+        // 객체.속성 = 값; or 객체.속성
+
+        // tv.켜() / tv.꺼()
+        // tv.width; 
+        // tv.color = blue;
+
+        // 내장객체 : String(문자) / Date(날짜객체) / Array(배열) / 수학(Math)
+        // 브라우저객체모델 : BOM / window/screen/location
+        // 문서객체모델 : DOM 
+
+        //참조변수(인스턴스이름) = new 생성함수();
+        let tv = new Object(); // 비어있는 tv라는 상자를 만들었고 이제 tv상자에 정보를 넣을 준비가 됨
+        tv.color = "black";
+        tv.price = 300000;
+
+        tv.show = function(){
+            document.write(`tv 색상 : ${this.color} <br>`);
+            document.write(`tv 가격 : ${this.price} <br>`);
+        }
+        tv.show();
+
+        function eunji(){
+            document.write("안녕하세요 저는 은지함수입니다.");
+        }
+        eunji();
+    </script>
+</body>
+</html>
